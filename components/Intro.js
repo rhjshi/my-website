@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+const IMG_SCALE = 3/4;
+
 const Intro = () => {
   return (
     <div className='intro-container'>
@@ -8,8 +10,8 @@ const Intro = () => {
           <Image 
           src='/animoji.png' 
           alt='animoji'
-          width={220}
-          height={280}
+          width={220 * IMG_SCALE}
+          height={280 * IMG_SCALE}
         />
         
         <div className='desc-box'>

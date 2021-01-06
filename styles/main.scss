@@ -1,12 +1,19 @@
+$grey: #A0A0A0;
+$light-grey: #eee;
+$dark-grey: #444;
+$black: #000000;
+$teal: #008080;
+
+
 .intro-container {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 0;
   .intro-content {
     display: flex;
     .desc-box {
       margin: auto;
-      padding-left: 15px;
+      padding-left: 25px;
       .hello {
         font-size: large;
       }
@@ -20,5 +27,11 @@
       }
     }
   }
+}
+
+.aboutMe-container {
+  background-color: $light-grey;
+  color: $dark-grey;
+  padding: 50px 100px;
   
 }
