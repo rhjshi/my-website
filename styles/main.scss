@@ -1,0 +1,24 @@
+.intro-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  .intro-content {
+    display: flex;
+    .desc-box {
+      margin: auto;
+      padding-left: 15px;
+      .hello {
+        font-size: large;
+      }
+      .nameHeader {
+        font-size: 60px;
+        margin: 0;
+      }
+      .subHeader{
+        font-size: 30px;
+        padding-left: 5px;
+      }
+    }
+  }
+  
+}
