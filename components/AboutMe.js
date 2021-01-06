@@ -8,6 +8,7 @@ const AboutMe = () => {
       fsdfsdsdf
       s
       defaultsf
+      <div>GitHub LinkedIn Email Resume</div>
     </div>
   );
 }
