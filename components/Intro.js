@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ScramblingText from './ScramblingText';
 
 const IMG_SCALE = 3/4;
 
@@ -15,8 +16,17 @@ const Intro = () => {
         />
         
         <div className='desc-box'>
-          <h1 className="nameHeader">Richie Shi</h1>
-          <div className="subHeader">Software Engineer</div>
+          <h1 className='name-header'>Richie Shi</h1>
+          <ScramblingText 
+            id='scrambled-description'
+            className='sub-header'
+            phrases={[
+              'Software Engineer',
+              'Full Stack Dev',
+              'UWaterloo',
+              'Toronto, ON'
+            ]}
+          />
         </div>
       </div>
     </div>
