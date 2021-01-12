@@ -13,7 +13,7 @@ const ScramblingText = (props) => {
     };
     next();
   }, []);
-  return <div id={props.id} className={props.className}/>;
+  return <div id={props.id} className={props.className}>{props.defaultText}</div>;
 }
 
 export default ScramblingText;
