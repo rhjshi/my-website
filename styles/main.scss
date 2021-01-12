@@ -3,9 +3,14 @@ $light-grey: #eee;
 $dark-grey: #444;
 $black: #000000;
 $teal: #008080;
+$blue: #0E6EB8;
 
 hr.intro-break {
   width: 90%;
+}
+
+.emp-text-color {
+  color: $blue;
 }
 
 .section-title {
