@@ -17,7 +17,7 @@ const AboutMe = () => {
               />
             </div>
           </Col>
-          <Col md='2' lg='1' style={{ paddingRight: '50px' }}>
+          <Col md='2' lg='1'>
             <ContactList/>
           </Col>
           <Col md='10' lg='8'>
