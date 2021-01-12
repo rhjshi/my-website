@@ -5,7 +5,7 @@ import ContactList from './ContactList';
 const AboutMe = () => {
   return (
     <div className='about-me-container'>
-      <Container fluid>
+      <Container fluid style={{ maxWidth: 1200 }}>
         <Row>
           <Col md='12' lg='3'>
             <div className='animoji-avatar'>
