@@ -7,6 +7,16 @@ const AboutMe = () => {
     <div className='about-me-container'>
       <Container fluid>
         <Row>
+          <Col md='4'>
+            <div className='animoji-avatar'>
+              <Image 
+                src='/animoji.png' 
+                alt='animoji'
+                width={220}
+                height={280}
+              />
+            </div>
+          </Col>
           <Col md='1' style={{ paddingRight: '50px' }}>
             <ContactList/>
           </Col>
@@ -42,16 +52,6 @@ const AboutMe = () => {
                 </p>
               </Row>
             </Container>
-          </Col>
-          <Col md='4'>
-            <div className='animoji-avatar'>
-              <Image 
-                src='/animoji.png' 
-                alt='animoji'
-                width={220}
-                height={280}
-              />
-            </div>
           </Col>
         </Row>
       </Container>
