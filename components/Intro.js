@@ -1,32 +1,35 @@
+import { Container, Row, Col } from 'reactstrap';
 import Image from 'next/image';
 import ScramblingText from './ScramblingText';
-
-const IMG_SCALE = 3/4;
 
 const Intro = () => {
   return (
     <div className='intro-container'>
       <div className='intro-content'>
-        <Image 
-          src='/animoji.png' 
-          alt='animoji'
-          width={220 * IMG_SCALE}
-          height={280 * IMG_SCALE}
-        />
-        
-        <div className='desc-box'>
-          <h1 className='name-header'>Richie Shi</h1>
-          <ScramblingText 
-            id='scrambled-description'
-            className='sub-header'
-            phrases={[
-              'Software Engineer',
-              'Full Stack Dev',
-              'UWaterloo',
-              'Toronto, ON'
-            ]}
+        <div className='avatar'>
+          <Image 
+            src='/animoji.png' 
+            alt='animoji'
+            width={165}
+            height={210}
           />
         </div>
+        <Container className='desc-box'>
+          <Row><h1 className='name-header'>Richie Shi</h1></Row>
+          <Row>
+            <ScramblingText 
+              id='scrambled-description'
+              className='sub-header'
+              defaultText='Software Engineer'
+              phrases={[
+                'Software Engineer',
+                'UWaterloo',
+                'Full Stack Dev',
+                'Toronto, ON'
+              ]}
+            />
+          </Row>
+        </Container>
       </div>
     </div>
   );
