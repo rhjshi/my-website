@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div className='about-me-container'>
       <Container fluid>
         <Row>
-          <Col md='4'>
+          <Col md='12' lg='3'>
             <div className='animoji-avatar'>
               <Image 
                 src='/animoji.png' 
@@ -17,10 +17,10 @@ const AboutMe = () => {
               />
             </div>
           </Col>
-          <Col md='1' style={{ paddingRight: '50px' }}>
+          <Col md='2' lg='1' style={{ paddingRight: '50px' }}>
             <ContactList/>
           </Col>
-          <Col md='7'>
+          <Col md='10' lg='8'>
             <Container fluid>
               <Row className='section-title'>About Me</Row>
               <br/>
