@@ -24,7 +24,6 @@ const Intro = () => {
               phrases={[
                 'Software Engineer',
                 'UWaterloo',
-                'Full Stack Dev',
                 'Toronto, ON'
               ]}
             />

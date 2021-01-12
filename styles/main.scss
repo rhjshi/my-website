@@ -8,6 +8,11 @@ hr.intro-break {
   width: 90%;
 }
 
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .intro-container {
   display: flex;
   justify-content: center;
@@ -28,6 +33,7 @@ hr.intro-break {
       .name-header {
         font-size: 60px;
         margin: 0;
+        font-weight: bold;
       }
       .sub-header{
         font-size: 30px;
@@ -39,6 +45,7 @@ hr.intro-break {
 
 .about-me-container {
   color: $dark-grey;
-  padding: 50px 100px;
-  
+  padding: 50px 70px;
+  font-size: 18px;
+
 }
