@@ -1,21 +1,16 @@
 import { Container, Row, Col } from 'reactstrap';
-import EmailIcon from '@material-ui/icons/Email';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import ResumeIcon from '@material-ui/icons/Description';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-
-const iconStyle = {
-  width: '30px',
-  height: '30px',
-  fill: '#444',
-}
+import ContactList from './ContactList';
 
 const AboutMe = () => {
   return (
     <div className='about-me-container'>
-      <Container fluid style={{width: '80%'}}>
+      <Container fluid>
         <Row>
-          <Col md='11'>
+          <ContactList/>
+
+        </Row>
+        <Row>
+          <Col>
             <Container fluid>
               <Row className='section-title'>About Me</Row>
               <br/>
@@ -45,32 +40,6 @@ const AboutMe = () => {
                   I will be continuing to make improvements to the page, 
                   but please feel free to contact me via any of the listed methods! 
                 </p>
-              </Row>
-            </Container>
-          </Col>
-          <Col md='1'>
-            <Container>
-              <Row>
-                <Col md='12' xs='3'>
-                  <a href="http://www.github.com/rhjshi" target="_blank" >
-                    <GitHubIcon style={iconStyle}/>
-                  </a>
-                </Col>
-                <Col md='12' xs='3'>
-                  <a href="http://www.linkedin.com/in/rhjshi" target="_blank" >
-                    <LinkedInIcon style={iconStyle}/>
-                  </a>
-                </Col>
-                <Col md='12' xs='3'>
-                  <a href="mailto: rhjshi@uwaterloo.ca" >
-                    <EmailIcon style={iconStyle}/>
-                  </a>
-                </Col>
-                <Col md='12' xs='3'>
-                  <a href="richie_shi_resume.pdf" target="_blank" >
-                    <ResumeIcon style={iconStyle}/>
-                  </a>
-                </Col>
               </Row>
             </Container>
           </Col>
