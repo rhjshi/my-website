@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
+import Image from 'next/image';
 import ContactList from './ContactList';
 
 const AboutMe = () => {
@@ -6,7 +7,7 @@ const AboutMe = () => {
     <div className='about-me-container'>
       <Container fluid>
         <Row>
-          <Col md='1'>
+          <Col md='1' style={{ paddingRight: '50px' }}>
             <ContactList/>
           </Col>
           <Col md='7'>
@@ -43,7 +44,14 @@ const AboutMe = () => {
             </Container>
           </Col>
           <Col md='4'>
-            sdf
+            <div className='animoji-avatar'>
+              <Image 
+                src='/animoji.png' 
+                alt='animoji'
+                width={220}
+                height={280}
+              />
+            </div>
           </Col>
         </Row>
       </Container>

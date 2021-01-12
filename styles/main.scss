@@ -18,10 +18,16 @@ hr.intro-break {
   font-weight: bold;
 }
 
+.animoji-avatar {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
 .contact-list {
   margin-left: 0;
   .col {
-    padding: 10px 0 20px;
+    padding: 10px 10px 20px 0;
   }
 }
 
@@ -31,13 +37,9 @@ hr.intro-break {
   padding: 100px 0;
   .intro-content {
     display: flex;
-    .avatar {
-      width: 165px;
-      height: 210px;
-    }
     .desc-box {
       margin: auto;
-      width: 400px;
+      width: 330px;
       padding-left: 45px;
       .hello {
         font-size: large;
@@ -51,6 +53,7 @@ hr.intro-break {
         font-size: 30px;
         padding-left: 5px;
         font-family: monospace;
+        color: $blue;
       }
     }
   }
