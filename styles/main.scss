@@ -4,6 +4,9 @@ $dark-grey: #444;
 $black: #000000;
 $teal: #008080;
 
+hr.intro-break {
+  width: 90%;
+}
 
 .intro-container {
   display: flex;
@@ -29,8 +32,7 @@ $teal: #008080;
   }
 }
 
-.aboutMe-container {
-  background-color: $light-grey;
+.about-me-container {
   color: $dark-grey;
   padding: 50px 100px;
   

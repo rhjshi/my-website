@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className='aboutMe-container'>
+    <div className='about-me-container'>
       Hey there! I'm a djflskdjfk
       fsdfsd
       sdf

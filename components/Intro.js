@@ -7,8 +7,7 @@ const Intro = () => {
   return (
     <div className='intro-container'>
       <div className='intro-content'>
-        
-          <Image 
+        <Image 
           src='/animoji.png' 
           alt='animoji'
           width={220 * IMG_SCALE}
