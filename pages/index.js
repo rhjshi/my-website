@@ -8,7 +8,6 @@ export default function Home() {
       <Head>
         <title>Richie Shi</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
       </Head>
       
       <Intro/>
