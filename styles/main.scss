@@ -18,6 +18,13 @@ hr.intro-break {
   font-weight: bold;
 }
 
+.contact-list {
+  margin-left: 0;
+  .col {
+    padding: 10px 0 20px;
+  }
+}
+
 .intro-container {
   display: flex;
   justify-content: center;
@@ -51,7 +58,7 @@ hr.intro-break {
 
 .about-me-container {
   color: $dark-grey;
-  padding: 50px 70px;
+  padding: 50px 50px;
   font-size: 18px;
 
 }

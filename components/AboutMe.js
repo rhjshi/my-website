@@ -6,11 +6,10 @@ const AboutMe = () => {
     <div className='about-me-container'>
       <Container fluid>
         <Row>
-          <ContactList/>
-
-        </Row>
-        <Row>
-          <Col>
+          <Col md='1'>
+            <ContactList/>
+          </Col>
+          <Col md='7'>
             <Container fluid>
               <Row className='section-title'>About Me</Row>
               <br/>
@@ -42,6 +41,9 @@ const AboutMe = () => {
                 </p>
               </Row>
             </Container>
+          </Col>
+          <Col md='4'>
+            sdf
           </Col>
         </Row>
       </Container>
