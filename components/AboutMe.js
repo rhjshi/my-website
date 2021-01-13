@@ -10,7 +10,7 @@ const AboutMe = () => {
           <Col md='12' lg='3'>
             <div className='animoji-avatar'>
               <Image 
-                src='/animoji.png' 
+                src='/images/animoji.png' 
                 alt='animoji'
                 width={220}
                 height={280}
