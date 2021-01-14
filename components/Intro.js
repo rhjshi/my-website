@@ -11,10 +11,10 @@ const Intro = () => {
             <ScramblingText 
               id='scrambled-description'
               className='sub-header'
-              defaultText='Software Engineer'
+              defaultText='Software Dev'
               phrases={[
-                'Software Engineer',
-                'UWaterloo',
+                'Software Dev',
+                'UWaterloo CS',
                 'Toronto, ON'
               ]}
             />
