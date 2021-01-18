@@ -9,13 +9,12 @@ const Intro = () => {
           <Row><h1 className='name-header'>Richie Shi</h1></Row>
           <Row>
             <ScramblingText 
-              id='scrambled-description'
               className='sub-header'
               defaultText='Software Dev'
               phrases={[
-                'Software Dev',
                 'UWaterloo CS',
-                'Toronto, ON'
+                'Toronto, ON',
+                'Software Dev',
               ]}
             />
           </Row>

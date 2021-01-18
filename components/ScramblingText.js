@@ -1,19 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import TextScrambler from '../util/TextScrambler';
 
-const ScramblingText = (props) => {
+const ScramblingText = props => {
+  const textEl = useRef(null);
   useEffect(() => {
-    const el = document.querySelector(`#${props.id}`);
-    const fx = new TextScrambler(el);
+    const fx = new TextScrambler(textEl.current);
     const pm = new PhraseManager(props.phrases);
-    const next = () => {
-      fx.setText(pm.getNextPhrase()).then(() => {
-        setTimeout(next, 2500)
-      })
-    };
-    next();
+    const intervalID = setInterval(() => fx.setText(pm.getNextPhrase()), 4000);
+
+    return () => clearInterval(intervalID);
   }, []);
-  return <div id={props.id} className={props.className}>{props.defaultText}</div>;
+
+  return <div ref={textEl} className={props.className}>{props.defaultText}</div>;
 }
 
 export default ScramblingText;
