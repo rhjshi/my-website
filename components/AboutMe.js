@@ -41,7 +41,7 @@ const AboutMe = () => {
                 </p>
                 <p>
                   <b>
-                    Currently seeking a <span className='emp-text-color'>Summer 2021</span> internship!
+                    Currently seeking a <span className='emp-text-color'>Winter 2022</span> internship!
                   </b> 
                 </p>
                 <p>

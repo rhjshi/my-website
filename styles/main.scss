@@ -16,6 +16,9 @@ hr.intro-break {
 .section-title {
   font-size: 30px;
   font-weight: bold;
+  &.center {
+    justify-content: center;
+  }
 }
 
 .animoji-avatar {
@@ -64,4 +67,83 @@ hr.intro-break {
   color: $dark-grey;
   padding: 50px 40px;
   font-size: 18px;
+}
+
+.experience-container {
+  padding: 0 40px 50px;
+  .exp-item {
+    justify-content: center;
+    padding-top: 50px;
+  }
+}
+
+.exp-card-container {
+  max-width: 800px;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 10px;
+  border: 2px solid $light-grey;
+  .container-fluid.full-height {
+    height: 100%;
+    .row.full-height {
+      height: 100%;
+    }
+  }
+  .img-section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin: auto;
+    border-bottom: 2px solid $light-grey;
+  }
+  .text-section {
+    height: 100%;
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
+
+.work-exp {
+  color: $dark-grey;
+  font-size: 18px;
+  .company {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $blue;
+  }
+  .location, .duration {
+    color: $grey;
+  } 
+  .desc {
+    padding-top: 20px;
+  } 
+}
+
+// Small devices (landscape phones, 576px and up)
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .exp-card-container {
+    min-height: 370px;
+    .img-section {
+      border-bottom: none;
+    }
+    .right-border {
+      &::before {
+        content : "";
+        position: absolute;
+        left    : 0;
+        bottom  : 0;
+        border-right: 2px solid $light-grey;
+        width   : 100%;
+        height  : calc(100% - 40px); // the px val is 2*margin-bottom
+        margin-bottom: 20px;
+      }  
+    }
+  }
 }

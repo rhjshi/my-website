@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Intro from '../components/Intro'
-import AboutMe from '../components/AboutMe'
+import Head from 'next/head';
+import Intro from '../components/Intro';
+import AboutMe from '../components/AboutMe';
+import Experience from '../components/Experience';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Intro/>
       <hr className='intro-break'/>
       <AboutMe/>
+      <Experience/>
     </div>
   )
 }
